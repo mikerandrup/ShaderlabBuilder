@@ -75,7 +75,6 @@ Shader "YourShader/GeneratedExample"
          _ExampleFloat ("ExampleFloat", Float) = 0.5
          _ExampleQuaternion ("ExampleQuaternion", Vector) = (0, 0, 0, 0)
          _ExampleSecondTexture ("ExampleSecondTexture", 2D) = "white" {}
-
     }
     SubShader
     {
@@ -118,7 +117,15 @@ Shader "YourShader/GeneratedExample"
 }
 ```
 
+### Future Plans
 
+1. Add Universal Rendering Pipeline shader capability.  This would be done by creating a second .htm template and config, and could simply reuse all the other template-engine code.
+
+### Known Limitations
+
+1. Only supports shaders for the Built-In Rendering Pipeline.
+2. The output may contain extra line breaks to remove in your shader IDE later.
+3. The template HTML could become hard to read if too much complexity is added.
 
 ### Contributing
 We welcome contributions from the community! If you'd like to contribute to the Unity Shader Property Generator, please follow these steps:
