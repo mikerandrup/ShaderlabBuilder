@@ -5,7 +5,7 @@ window.onload = function () {
     ///////////////////////////////
 
     const content = {
-        SHADER_NAME: "Phong",
+        SHADER_NAME: "GeneratedExample",
 
         FALLBACK_SHADER: "Diffuse",
     };
@@ -41,9 +41,10 @@ window.onload = function () {
     // Define Shader Properties Here
     ///////////////////////////////
     const shaderParams = {
-        MainTint: paramTypes.Color,
-        SpecularColor: paramTypes.Color,
-        SpecularPower: paramTypes.Float
+        ExampleColor: paramTypes.Color,
+        ExampleFloat: paramTypes.Float,
+        ExampleQuaternion: paramTypes.Vector4,
+        ExampleSecondTexture: paramTypes.Texture2D
     };
 
     ///////////////////////////////
