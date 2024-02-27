@@ -119,7 +119,7 @@ Shader "YourShader/GeneratedExample"
 
 ### Future Plans
 
-1. Add Universal Rendering Pipeline shader capability.  This would be done by creating a second .htm template and config, and could simply reuse all the other template-engine code.
+1. Add Universal Rendering Pipeline shader capability.  This would be done by creating a second .htm template and config.js, and could simply reuse all the other template-engine code.
 
 ### Known Limitations
 
