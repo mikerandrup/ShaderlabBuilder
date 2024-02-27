@@ -1,53 +1,6 @@
 window.onload = function () {
 
     ///////////////////////////////
-    // Configuration Section
-    ///////////////////////////////
-
-    const content = {
-        SHADER_NAME: "GeneratedExample",
-
-        FALLBACK_SHADER: "Diffuse",
-    };
-
-    const enabled = {
-
-        PARAMS_MAINTEX: true,
-
-        PASSES_SURF: true,
-        PASSES_VERTFRAG: false,
-
-        TAGS_OPAQUE: true,
-        TAGS_TRANSPARENT: false,
-
-        INCLUDE_UNITYCGINC: true
-
-    };
-
-    ///////////////////////////////
-    // Do not normally edit this
-    ///////////////////////////////
-
-    const paramTypes = {
-        Color: "Color",
-        Float: "Float",
-        Texture2D: "2D",
-        Vector4: "Vector",
-    };
-    const paramDefaults = defineParamDefaults();
-    const cgprogramTypes = defineCGProgramTypes();
-
-    ///////////////////////////////
-    // Define Shader Properties Here
-    ///////////////////////////////
-    const shaderParams = {
-        ExampleColor: paramTypes.Color,
-        ExampleFloat: paramTypes.Float,
-        ExampleQuaternion: paramTypes.Vector4,
-        ExampleSecondTexture: paramTypes.Texture2D
-    };
-
-    ///////////////////////////////
     // Shader-specific Utilities
     ///////////////////////////////
 
