@@ -11,12 +11,7 @@ This tool simplifies and automates the creation of shader properties for Unity, 
 - **Robust Property Type Handling:** Streamline code and reduce the need for error checking with pre-defined property types.
 - **Customizable:** Extensive modification capabilities to suit a wide range of shader development needs.
 
-## Getting Started
-
-### Prerequisites
-
-- Unity (Version specific to your project requirements)
-- Basic understanding of shader development in Unity
+## Quick Start
 
 ### Installation
 
@@ -27,13 +22,17 @@ This tool simplifies and automates the creation of shader properties for Unity, 
 5. Once you're happy with the starting point of your shader, simply copy the browser output and paste into your favorite IDE saving the result as a *.shader file inside a Unity project.
 6. Keep editing your shader past the starting point.
 
+### Prerequisites
+
+- Unity (Version specific to your project requirements)
+- Basic understanding of shader development in Unity
+
 ### Usage
 Define your shader properties in the shaderParams configuration object.
 Utilize the provided functions defineParamDefaults() and defineCGProgramTypes() to set up property types and defaults.
 Generate your shader code using the tool's interface.
 
 # Example Usage:
-
 
 ## Example config.js
 ```
