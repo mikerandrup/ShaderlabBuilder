@@ -1,52 +1,6 @@
 window.onload = function () {
 
     ///////////////////////////////
-    // Configuration Section
-    ///////////////////////////////
-
-    const content = {
-        SHADER_NAME: "Phong",
-
-        FALLBACK_SHADER: "Diffuse",
-    };
-
-    const enabled = {
-
-        PARAMS_MAINTEX: true,
-
-        PASSES_SURF: true,
-        PASSES_VERTFRAG: false,
-
-        TAGS_OPAQUE: true,
-        TAGS_TRANSPARENT: false,
-
-        INCLUDE_UNITYCGINC: true
-
-    };
-
-    ///////////////////////////////
-    // Do not normally edit this
-    ///////////////////////////////
-
-    const paramTypes = {
-        Color: "Color",
-        Float: "Float",
-        Texture2D: "2D",
-        Vector4: "Vector",
-    };
-    const paramDefaults = defineParamDefaults();
-    const cgprogramTypes = defineCGProgramTypes();
-
-    ///////////////////////////////
-    // Define Shader Properties Here
-    ///////////////////////////////
-    const shaderParams = {
-        MainTint: paramTypes.Color,
-        SpecularColor: paramTypes.Color,
-        SpecularPower: paramTypes.Float
-    };
-
-    ///////////////////////////////
     // Shader-specific Utilities
     ///////////////////////////////
 
