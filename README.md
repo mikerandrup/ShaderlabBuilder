@@ -27,14 +27,13 @@ This tool simplifies and automates the creation of shader properties for Unity, 
 5. Once you're happy with the starting point of your shader, simply copy the browser output and paste into your favorite IDE saving the result as a *.shader file inside a Unity project.
 6. Keep editing your shader past the starting point.
 
-
-###Usage
+### Usage
 Define your shader properties in the shaderParams configuration object.
 Utilize the provided functions defineParamDefaults() and defineCGProgramTypes() to set up property types and defaults.
 Generate your shader code using the tool's interface.
 
 
-###Contributing
+### Contributing
 We welcome contributions from the community! If you'd like to contribute to the Unity Shader Property Generator, please follow these steps:
 
 1. Fork the repository.
@@ -43,14 +42,14 @@ We welcome contributions from the community! If you'd like to contribute to the 
 4. Push to the branch (git push origin feature/AmazingFeature).
 5. Open a pull request.
 
-###License
+### License
 Distributed under the MIT License. See LICENSE for more information.
 
-###Acknowledgments
+### Acknowledgments
 Thank you to all the contributors who spend time to improve this tool!
 Special thanks to the game development community for their support and feedback.
 
-###Contact
+### Contact
 Mike Randrup - @mikerandrup - github@mikerandrup.com
 
 Project Link: https://github.com/mikerandrup/ShaderlabBuilder
