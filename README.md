@@ -2,7 +2,7 @@
 
 ## Overview
 
-This tool simplifies and automates the creation of shader properties for Unity, streamlining the shader development process. It helps in reducing potential errors and saving time by providing a user-friendly interface to generate shader properties, including support for vert()/frag() shaders and two-pass shaders with both vert/frag and surf() approaches.
+This tool simplifies and automates the creation of shader properties and other boilerplate starting code for Unity Shaderlab (.shader) files, streamlining the shader development process. It helps in reducing potential errors and saving time by providing a less tedious way to generate shader properties, including support for vert()/frag() shaders and two-pass shaders with both vert/frag and surf() approaches.
 
 ## Features
 
