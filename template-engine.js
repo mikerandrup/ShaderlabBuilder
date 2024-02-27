@@ -51,23 +51,6 @@ window.onload = function () {
         return resultString;
     }
 
-    function defineParamDefaults() {
-        const defaults = {};
-        defaults[paramTypes.Color] = "(1,1,1,1)";
-        defaults[paramTypes.Float] = "0.5";
-        defaults[paramTypes.Texture2D] = '"white" {}';
-        defaults[paramTypes.Vector4] = "(0, 0, 0, 0)";
-        return defaults;
-    }
-
-    function defineCGProgramTypes() {
-        const cgTypes = {};
-        cgTypes[paramTypes.Color] = "fixed4";
-        cgTypes[paramTypes.Float] = "float";
-        cgTypes[paramTypes.Texture2D] = "sampler2D";
-        cgTypes[paramTypes.Vector4] = "float4";
-        return cgTypes;
-    }
 
     ///////////////////////////////
     // Generic Template Rendering
