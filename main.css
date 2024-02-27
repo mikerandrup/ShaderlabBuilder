@@ -1,0 +1,26 @@
+body {
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    margin: 5%;
+}
+
+article {
+    width: 90%;
+    background-color: white;
+    border: solid 1px black;
+    box-shadow: rgba(0,0,0,0.5) 5px 5px 10px;
+    padding: 2em;
+}
+
+header, footer {
+    color: cadetblue;
+}
+
+header {
+    border-bottom: 1px solid cadetblue;
+}
+
+footer {
+    border-top: 1px solid cadetblue;
+}
