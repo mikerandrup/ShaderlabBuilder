@@ -128,7 +128,7 @@ Shader "YourShader/GeneratedExample"
 3. The template HTML could become hard to read if too much complexity is added.
 
 ### Contributing
-We welcome contributions from the community! If you'd like to contribute to the Unity Shader Property Generator, please follow these steps:
+We welcome contributions from the community! If you'd like to contribute to the Unity ShaderlabBuilder, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch for your feature (git checkout -b feature/AmazingFeature).
