@@ -20,7 +20,7 @@ This tool simplifies and automates the creation of shader properties for Unity, 
 
 ### Installation
 
-1. Clone the repository to your local machine.
+1. Clone the repository to your local machine (or download the repo as a .zip file and extract)
 2. Open the appropriate config file in your favorite text editor (e.g. brp-shader-config.js).
 3. Open the HTML template file in your browser locally using the file:// (e.g. brp-shader-builder.htm)
 4. Edit the config file, and refresh your browser.
@@ -31,6 +31,94 @@ This tool simplifies and automates the creation of shader properties for Unity, 
 Define your shader properties in the shaderParams configuration object.
 Utilize the provided functions defineParamDefaults() and defineCGProgramTypes() to set up property types and defaults.
 Generate your shader code using the tool's interface.
+
+# Example Usage:
+
+
+## Example config.js
+```
+const shaderParams = {
+    ExampleColor: paramTypes.Color,
+    ExampleFloat: paramTypes.Float,
+    ExampleQuaternion: paramTypes.Vector4,
+    ExampleSecondTexture: paramTypes.Texture2D
+};
+
+const content = {
+    SHADER_NAME: "GeneratedExample",
+
+    FALLBACK_SHADER: "Diffuse",
+};
+
+const enabled = {
+
+    PARAMS_MAINTEX: true,
+
+    PASSES_SURF: true,
+    PASSES_VERTFRAG: false,
+
+    TAGS_OPAQUE: true,
+    TAGS_TRANSPARENT: false,
+
+    INCLUDE_UNITYCGINC: true
+
+};
+```
+
+## Example Output
+```
+Shader "YourShader/GeneratedExample"
+{
+    Properties
+    {
+         _MainTex ("Albedo (RGB)", 2D) = "white" {}
+         _ExampleColor ("ExampleColor", Color) = (1,1,1,1)
+         _ExampleFloat ("ExampleFloat", Float) = 0.5
+         _ExampleQuaternion ("ExampleQuaternion", Vector) = (0, 0, 0, 0)
+         _ExampleSecondTexture ("ExampleSecondTexture", 2D) = "white" {}
+
+    }
+    SubShader
+    {
+        Tags {
+            "RenderType"="Opaque"
+        }
+
+         LOD 200
+
+         CGPROGRAM
+
+         #pragma surface surf Standard fullforwardshadows
+         #pragma target 3.0
+         #include "UnityCG.cginc"
+
+         fixed4 _ExampleColor;
+         float _ExampleFloat;
+         float4 _ExampleQuaternion;
+         sampler2D _ExampleSecondTexture;
+
+         sampler2D _MainTex;
+         struct Input
+         {
+            float2 uv_MainTex;
+         };
+
+         void surf (Input IN, inout SurfaceOutputStandard surfOut)
+         {
+
+            fixed4 texVal = tex2D (_MainTex, IN.uv_MainTex);
+
+            surfOut.Albedo = texVal.rgb;
+            surfOut.Alpha = texVal.a;
+
+         }
+         ENDCG
+
+    }
+    FallBack "Diffuse"
+}
+```
+
 
 
 ### Contributing
