@@ -1,4 +1,4 @@
-# Unity Shader Property Generator
+# Unity Shaderlab Builder
 
 ## Overview
 
